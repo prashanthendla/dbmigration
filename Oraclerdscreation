@@ -108,7 +108,8 @@
         "DBName" : { "Ref" : "DBName" },
         "AllocatedStorage" : { "Ref" : "DBAllocatedStorage" },
         "DBInstanceClass" : { "Ref" : "DBInstanceClass" },
-        "Engine" : "MySQL",
+        "Engine" : "oracle-ee",
+        "LicenseModel" : "bring-your-own-license"
         "MasterUsername" : { "Ref" : "DBUser" },
         "MasterUserPassword" : { "Ref" : "DBPassword" },
         "MultiAZ" : { "Ref" : "MultiAZ" },
@@ -137,7 +138,7 @@
 
     "MasterJDBCConnectionString": {
       "Description" : "JDBC connection string for the master database",
-      "Value" : { "Fn::Join": [ "", [ "jdbc:mysql://",
+      "Value" : { "Fn::Join": [ "", [ "jdbc:oracle://",
                                       { "Fn::GetAtt": [ "MasterDB", "Endpoint.Address" ] },
                                       ":",
                                       { "Fn::GetAtt": [ "MasterDB", "Endpoint.Port" ] },
@@ -146,7 +147,7 @@
     },
     "ReplicaJDBCConnectionString": {
       "Description" : "JDBC connection string for the replica database",
-      "Value" : { "Fn::Join": [ "", [ "jdbc:mysql://",
+      "Value" : { "Fn::Join": [ "", [ "jdbc:oracle://",
                                       { "Fn::GetAtt": [ "ReplicaDB", "Endpoint.Address" ] },
                                       ":",
                                       { "Fn::GetAtt": [ "ReplicaDB", "Endpoint.Port" ] },
