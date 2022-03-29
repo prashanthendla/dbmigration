@@ -130,7 +130,7 @@
           "OptionGroupDescription": "A test option group",
           "OptionConfigurations": [
               {
-                  "OptionName": "APEX-DEV"
+                  "OptionName": "APEX"
               }
           ]
       }
