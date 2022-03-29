@@ -109,7 +109,7 @@
         "AllocatedStorage" : { "Ref" : "DBAllocatedStorage" },
         "DBInstanceClass" : { "Ref" : "DBInstanceClass" },
         "Engine" : "oracle-ee",
-        "LicenseModel" : "bring-your-own-license"
+        "LicenseModel" : "bring-your-own-license",
         "MasterUsername" : { "Ref" : "DBUser" },
         "MasterUserPassword" : { "Ref" : "DBPassword" },
         "MultiAZ" : { "Ref" : "MultiAZ" },
