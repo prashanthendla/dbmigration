@@ -5,7 +5,7 @@
 
   "Parameters": {
     "DBName": {
-      "Default": "MyDatabase",
+      "Default": "MyDB",
       "Description" : "The database name",
       "Type": "String",
       "MinLength": "1",
@@ -84,8 +84,8 @@
         "GroupDescription": "Open database for access",
         "SecurityGroupIngress" : [{
           "IpProtocol" : "tcp",
-          "FromPort" : "3306",
-          "ToPort" : "3306",
+          "FromPort" : "1521",
+          "ToPort" : "1521",
           "SourceSecurityGroupName" : { "Ref" : "EC2SecurityGroup" }
         }]
       }
