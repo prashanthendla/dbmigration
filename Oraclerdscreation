@@ -120,6 +120,27 @@
       "DeletionPolicy" : "Snapshot"
     },
 
+    "OracleOptionGroup": {
+      "Type": "AWS::RDS::OptionGroup",
+      "Properties": {
+          "EngineName": "oracle-ee",
+          "MajorEngineVersion": "19",
+          "OptionGroupDescription": "A test option group",
+          "OptionConfigurations": [
+              {
+                  "OptionName": "OEM",
+                  "DBSecurityGroupMemberships": [
+                      "default"
+                  ],
+                  "Port": "5500"
+              },
+              {
+                  "OptionName": "APEX"
+              }
+          ]
+      }
+  },
+
     "ReplicaDB" : {
       "Type" : "AWS::RDS::DBInstance",
       "Properties" : {
