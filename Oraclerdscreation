@@ -128,13 +128,6 @@
           "OptionGroupDescription": "A test option group",
           "OptionConfigurations": [
               {
-                  "OptionName": "OEM",
-                  "DBSecurityGroupMemberships": [
-                      "default"
-                  ],
-                  "Port": "5500"
-              },
-              {
                   "OptionName": "APEX"
               }
           ]
