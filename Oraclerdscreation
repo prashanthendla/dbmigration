@@ -16,6 +16,7 @@
 
     "DBUser": {
       "NoEcho": "true",
+      "Default": "dbadmin",
       "Description" : "The database admin account username",
       "Type": "String",
       "MinLength": "1",
@@ -26,6 +27,7 @@
 
     "DBPassword": {
       "NoEcho": "true",
+      "Default": "Rainjan2021",
       "Description" : "The database admin account password",
       "Type": "String",
       "MinLength": "1",
@@ -35,7 +37,7 @@
     },
 
     "DBAllocatedStorage": {
-      "Default": "5",
+      "Default": "50",
       "Description" : "The size of the database (Gb)",
       "Type": "Number",
       "MinValue": "5",
