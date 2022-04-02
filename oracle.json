@@ -8,12 +8,12 @@
         "Type" : "AWS::RDS::DBInstance",
         "Properties" : {
           "DBName" : "MyDb",
-          "AllocatedStorage" : "5",
-          "DBInstanceClass" : "db.m5.xlarge",
+          "AllocatedStorage" : "20",
+          "DBInstanceClass" : "db.t2.small",
           "Engine" : "oracle-ee",
           "MasterUsername" : "myName",
           "MasterUserPassword" : "myPassword",
-          "LicenseModel" : "bring-your-own-license"
+          "LicenseModel" : "license-included"
         },
         "DeletionPolicy" : "Snapshot"
       }
