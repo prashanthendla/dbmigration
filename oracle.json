@@ -9,7 +9,7 @@
         "Properties" : {
           "DBName" : "MyDb",
           "AllocatedStorage" : "20",
-          "DBInstanceClass" : "db.t2.small",
+          "DBInstanceClass" : "db.m5.xlarge",
           "Engine" : "oracle-se2",
           "MasterUsername" : "myName",
           "MasterUserPassword" : "myPassword",
