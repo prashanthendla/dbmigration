@@ -10,7 +10,7 @@
           "DBName" : "MyDb",
           "AllocatedStorage" : "20",
           "DBInstanceClass" : "db.t2.small",
-          "Engine" : "oracle-ee",
+          "Engine" : "oracle-se2",
           "MasterUsername" : "myName",
           "MasterUserPassword" : "myPassword",
           "LicenseModel" : "license-included"
