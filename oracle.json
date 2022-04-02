@@ -11,6 +11,8 @@
           "AllocatedStorage" : "5",
           "DBInstanceClass" : "db.t2.small",
           "Engine" : "oracle-ee",
+          "MasterUsername" : "myName",
+          "MasterUserPassword" : "myPassword",
           "LicenseModel" : "bring-your-own-license"
         },
         "DeletionPolicy" : "Snapshot"
