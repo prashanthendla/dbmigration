@@ -7,7 +7,7 @@
       "MyDB" : {
         "Type" : "AWS::RDS::DBInstance",
         "Properties" : {
-          "DBName" : "MyDatabase",
+          "DBName" : "MyDb",
           "AllocatedStorage" : "5",
           "DBInstanceClass" : "db.m5.xlarge",
           "Engine" : "oracle-ee",
